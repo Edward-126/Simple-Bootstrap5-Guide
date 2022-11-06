@@ -1,0 +1,81 @@
+/* -------------------------------- Imports -------------------------------- */ /* -------------------------------- Colour Pallets -------------------------------- */
+/* -------------------------------- Colour Pallets -------------------------------- */
+/* -------------------------------- Colour shades -------------------------------- */
+/* -------------------------------- Colour shades -------------------------------- */
+/* -------------------------------- Imports -------------------------------- */
+.box {
+  background-color: #b3b3b3;
+  border: 1px solid #393E46;
+  min-height: 50px;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+body h1 {
+  text-align: center;
+  margin: 2rem;
+}
+body h2 {
+  text-align: center;
+  margin: 2rem;
+}
+body p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+body code {
+  font-size: 1.2rem;
+  color: #ff4d4d;
+}
+body a {
+  text-decoration: none;
+  color: #000;
+}
+body a:hover {
+  color: #ff4d4d;
+}
+body .code p {
+  font-family: Consolas, "courier new";
+  background-color: #e6e6e6;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+body .code p code {
+  color: #ff4d4d;
+}
+body:before {
+  content: "XS";
+  color: #666666;
+  font-size: 2rem;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+@media (min-width: 576px) {
+  body:before {
+    content: "SM";
+  }
+}
+@media (min-width: 768px) {
+  body:before {
+    content: "MD";
+  }
+}
+@media (min-width: 992px) {
+  body:before {
+    content: "LG";
+  }
+}
+@media (min-width: 1200px) {
+  body:before {
+    content: "XL";
+  }
+}
+@media (min-width: 1400px) {
+  body:before {
+    content: "XXL";
+  }
+}/*# sourceMappingURL=index.css.map */

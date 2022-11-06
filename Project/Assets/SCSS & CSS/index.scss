@@ -1,0 +1,109 @@
+/* -------------------------------- Imports -------------------------------- */
+
+@import './Variables/colours';
+
+/* -------------------------------- Imports -------------------------------- */
+
+.box {
+    background-color: $black-3;
+    border: 1px solid $_01palletc-2;
+    min-height: 50px;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+body {
+
+    h1 {
+        text-align: center;
+        margin: 2rem;
+    }
+
+    h2 {
+        text-align: center;
+        margin: 2rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    code {
+        font-size: 1.2rem;
+        color: $red-7;
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+
+        &:hover{
+            color: $red-7;
+        }
+    }
+
+    .code {
+        p {
+            font-family: Consolas, "courier new";
+            background-color: $black-1;
+            padding: 1rem;
+            font-size: 1.2rem;
+
+            code {
+                color: $red-7;
+            }
+        }
+    }
+
+    &:before {
+        content: "XS";
+        color: $black-6;
+        font-size: 2rem;
+        font-weight: bold;
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+}
+
+@media (min-width: 576px) {
+    body {
+        &:before {
+            content: "SM";
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        &:before {
+            content: "MD";
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+        &:before {
+            content: "LG";
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        &:before {
+            content: "XL";
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    body {
+        &:before {
+            content: "XXL";
+        }
+    }
+}

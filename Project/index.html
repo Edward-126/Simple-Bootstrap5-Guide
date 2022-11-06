@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+
+    <!------------------------------------------------------------------------------------------------------->
+
+    <!-- Tab Icon -->
+
+    <link href="Assets/Images/barlogo.png" rel="icon">
+
+    <!-- Tab Icon -->
+
+    <!------------------------------------------------------------------------------------------------------->
+
+    <!-- Google Font -->
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Covered By Your Grace:300,300i,400,400i,500,500i,600,600i,700,700i">
+
+    <!-- Google Font -->
+
+    <!-- Boxicon Font -->
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Boxicon Font -->
+
+    <!-- EXternal Links -->
+
+    <!-------------------------------- Bootstrap CDN -------------------------------->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <!-------------------------------- Bootstrap CDN -------------------------------->
+
+    <!-- EXternal Linkss -->
+
+    <!------------------------------------------------------------------------------------------------------->
+
+    <!-- Scripts -->
+
+    <script src="Assets/JS/Index.js" defer></script>
+
+    <!-- Scripts -->
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="Assets/SCSS & CSS/index.css">
+    <link rel="stylesheet" href="Assets/SCSS & CSS/breakpoints.css">
+
+    <!-- CSS -->
+
+    <!------------------------------------------------------------------------------------------------------->
+    <!------------------------------------- T-126 ------------------------------------->
+
+</head>
+
+<body>
+
+    <h1>A Simple Bootstrap Guide</h1>
+    <p>Try resizing the browser to see the responsiveness of the layouts. <br> Elements shown have not been modified by
+        CSS. The styling was applied through Bootstrap. <br>With the courtesy of <a
+            href="https://youtu.be/Jyvffr3aCp0">- Web Dev Simplified -</a> <br>Created by <a
+            href="https://thili-126.github.io">- T-126 -</a></p>
+
+    <hr>
+
+    <!-------------------------------- Grids Description -------------------------------->
+
+    <h2>- Bootstrap Grids -</h2>
+
+    <p>The Important thing to notice is that the hierarchy of the grid is <code>container → row → col</code> <br> The
+        screen is divided to 12 parts & a part is called <code>1fr</code></p>
+
+    <div class="code">
+        <p>
+            <code>container → row → col</code>
+        </p>
+    </div>
+
+    <!-------------------------------- Grids Description -------------------------------->
+
+    <!---------------------------------------------------------------->
+
+    <!-------------------------------- Grids Section -------------------------------->
+
+    <div class="container">
+
+        <!-------------------------------- Section 1 -------------------------------->
+
+        <h4><i class='bx bxs-star'></i> Default Columns</h4>
+
+        <div class="row">
+            <div class="col">
+                <div class="box"></div>
+            </div>
+
+            <div class="col">
+                <div class="box"></div>
+            </div>
+
+            <div class="col">
+                <div class="box"></div>
+            </div>
+
+            <div class="col">
+                <div class="box"></div>
+            </div>
+        </div>
+
+        <!-------------------------------- Section 1 -------------------------------->
+
+        <hr>
+
+        <!-------------------------------- Section 2 -------------------------------->
+
+        <h4><i class='bx bxs-star'></i> Columns with size formatting</h4>
+
+        <div class="row">
+
+            <!-------------------------------- Column with 3fr -------------------------------->
+
+            <div class="col-3">
+                <div class="box">
+                    col-3 → Column with 3fr
+                </div>
+            </div>
+
+            <!-------------------------------- Column with 3fr -------------------------------->
+
+            <!-------------------------------- Column with 5fr -------------------------------->
+
+            <div class="col-5">
+                <div class="box">
+                    col-5 → Column with 5fr
+                </div>
+            </div>
+
+            <!-------------------------------- Column with 5fr -------------------------------->
+
+            <!-------------------------------- Column with auto fr -------------------------------->
+
+            <div class="col-auto">
+                <div class="box">col-auto → Wraps the content</div>
+                <!-------------------------------- Auto - Wraps the content -------------------------------->
+            </div>
+
+            <!------------------------------- Column with auto fr -------------------------------->
+
+            <div class="col-7">
+                <div class="box">
+                    col-7 → Column with 7fr -- By default, the gap in y axis is 0. That's why 👆 happens.
+                </div>
+            </div>
+
+        </div>
+
+        <!-------------------------------- Section 2 -------------------------------->
+
+        <hr>
+
+        <!-------------------------------- Section 3 -------------------------------->
+
+        <h4><i class='bx bxs-star'></i> Columns with size formatting for seperate display sizes</h4>
+
+        <div class="row">
+
+            <div class="col-lg-4">
+                <div class="box">
+                    col-lg-4 → This takes 4fr in large screens & above but full fr in every other screen sizes
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-sm-3">
+                <div class="box">
+                    col-lg-6 col-sm-3 → This takes 6fr in large screens & above; 3fr in small screens & above.
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="box">
+                    col
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="box">
+                    col
+                </div>
+            </div>
+
+        </div>
+
+        <!-------------------------------- Section 3 -------------------------------->
+
+        <hr>
+
+        <!-------------------------------- Section 4 -------------------------------->
+
+        <h4><i class='bx bxs-star'></i> Nested Columns</h4>
+
+        <!-------------------------------- Nested Column -------------------------------->
+
+        <div class="col">
+            <div class="row">
+
+                <div class="col">
+
+                    <div class="row">
+
+                        <div class="col">
+                            <div class="box">col inside col</div>
+                        </div>
+
+                        <div class="col">
+                            <div class="box">col inside col</div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col">
+                    <div class="box">col</div>
+                </div>
+
+                <div class="col">
+                    <div class="box">col</div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!--------------------------------- Nested Column -------------------------------->
+
+        <!-------------------------------- Section 4 -------------------------------->
+
+        <hr>
+
+        <!-------------------------------- Section 5 -------------------------------->
+
+        <!-------------------------------- Grid with 1 gap -------------------------------->
+
+        <h4><i class='bx bxs-star'></i> Columns with gap size 2</h4>
+
+        <div class="row g-2">
+
+            <div class="col-6">
+                <div class="box">
+                    col
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div class="box">
+                    col
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="box">
+                    col
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="box">
+                    col
+                </div>
+            </div>
+
+        </div>
+
+        <!-------------------------------- Grid with 1 gap -------------------------------->
+
+        <!-------------------------------- Section 5 -------------------------------->
+
+    </div>
+
+    <!-------------------------------- Grids Section -------------------------------->
+
+    <hr>
+
+    <!-------------------------------- Tables Section -------------------------------->
+
+    <!-------------------------------- Tables Description -------------------------------->
+
+    <h2>- Bootstrap Tables -</h2>
+
+    <p><code></code></p>
+
+    <div class="code">
+        <p>
+            <code>table → tr → td</code>
+        </p>
+    </div>
+
+    <!-------------------------------- Tables Description -------------------------------->
+
+    <!-------------------------------- Tables -------------------------------->
+
+    <div class="container">
+        <!-------------------------------- Default Table -------------------------------->
+
+        <h4><i class='bx bxs-star'></i> Default Table</h4>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>First</th>
+                    <th>Last</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Arthur</td>
+                    <td>Leywin</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>Tessia</td>
+                    <td>Elrith</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Jesmin</td>
+                    <td>Flamesworth</td>
+                    <td>27</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-------------------------------- Default Table -------------------------------->
+
+        <br>
+
+        <!-------------------------------- Small Table -------------------------------->
+
+        <h4><i class='bx bxs-star'></i> Small Table</h4>
+
+        <table class="table table-sm">
+            <thead>
+                <tr>
+                    <th>First</th>
+                    <th>Last</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Arthur</td>
+                    <td>Leywin</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>Tessia</td>
+                    <td>Elrith</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Jesmin</td>
+                    <td>Flamesworth</td>
+                    <td>27</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-------------------------------- Small Table -------------------------------->
+
+        <br>
+
+        <!-------------------------------- Table Divider -------------------------------->
+
+        <h4><i class='bx bxs-star'></i> Table Divider</h4>
+
+        <table class="table">
+            <thead class="table-group-divider">
+                <tr>
+                    <th>First</th>
+                    <th>Last</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Arthur</td>
+                    <td>Leywin</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>Tessia</td>
+                    <td>Elrith</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Jesmin</td>
+                    <td>Flamesworth</td>
+                    <td>27</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-------------------------------- Table Divider -------------------------------->
+
+        <br>
+
+        <!-------------------------------- Table Styling -------------------------------->
+
+        <h4><i class='bx bxs-star'></i>Table Styling</h4>
+
+        <table class="table table-hover">
+            <thead>
+                <tr class="table-secondary">
+                    <th>First</th>
+                    <th>Last</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="table-primary">Arthur</td>
+                    <td>Leywin</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>Tessia</td>
+                    <td>Elrith</td>
+                    <td class="table-danger">20</td>
+                </tr>
+                <tr>
+                    <td>Jesmin</td>
+                    <td>Flamesworth</td>
+                    <td>27</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-------------------------------- Table Styling -------------------------------->
+
+        <br>
+        <!------------------------------------- T-126 ------------------------------------->
+
+
+        <!-------------------------------- Wide Table -------------------------------->
+
+        <h4><i class='bx bxs-star'></i> Wide Table</h4>
+
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>First</th>
+                        <th>Last</th>
+                        <th>Age</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Arthur</td>
+                        <td>Leywin</td>
+                        <td>21</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                    </tr>
+                    <tr>
+                        <td>Tessia</td>
+                        <td>Elrith</td>
+                        <td>20</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                    </tr>
+                    <tr>
+                        <td>Jesmin</td>
+                        <td>Flamesworth</td>
+                        <td>27</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-------------------------------- Wide Table -------------------------------->
+
+        <br>
+
+    </div>
+
+    <hr>
+
+    <!-------------------------------- Tables -------------------------------->
+
+    <!-------------------------------- Tables Section -------------------------------->
+
+    <!-------------------------------- Forms -------------------------------->
+
+    <!-------------------------------- Forms Description -------------------------------->
+
+    <h2>- Bootstrap Forms -</h2>
+
+    <p><code></code></p>
+
+    <div class="code">
+        <p>
+            <code>form → label → input</code>
+        </p>
+    </div>
+
+    <!-------------------------------- Forms Description -------------------------------->
+
+    <!-------------------------------- Default Form -------------------------------->
+
+    <div class="container">
+
+        <h4><i class='bx bxs-star'></i> Default Form</h4>
+
+        <form>
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control">
+            <button>Submit</button>
+        </form>
+
+        <hr>
+
+        <!-------------------------------- Default Form -------------------------------->
+
+        <!-------------------------------- Form Styling -------------------------------->
+
+        <h4><i class='bx bxs-star'></i> Form Styling</h4>
+
+        <form>
+            <label for="email" class="form-label col-form-label-lg">Email</label>
+            <input type="email" class="form-control form-control-lg">
+            <button>Submit</button>
+        </form>
+
+        <hr>
+
+        <!-------------------------------- Form Styling -------------------------------->
+
+        <!-------------------------------- Disabled Form -------------------------------->
+
+        <h4><i class='bx bxs-star'></i> Disabled Form</h4>
+
+        <form>
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" disabled>
+            <button>Submit</button>
+        </form>
+
+        <hr>
+
+        <!-------------------------------- Disabled Form -------------------------------->
+
+        <!-------------------------------- Read-Only Form -------------------------------->
+
+        <h4><i class='bx bxs-star'></i> Read-Only Form</h4>
+
+        <form>
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" value="urPlaceholder" readonly>
+            <button>Submit</button>
+        </form>
+
+        <hr>
+
+        <!-------------------------------- Read-Only Form -------------------------------->
+
+        <!-------------------------------- Plain-text Form -------------------------------->
+
+        <h4><i class='bx bxs-star'></i> Plain-text Form</h4>
+
+        <form>
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control form-control-plaintext" value="urPlaceholder">
+            <button>Submit</button>
+        </form>
+
+        <hr>
+
+        <!-------------------------------- Plain-text Form -------------------------------->
+
+        <!-------------------------------- Colour Picker -------------------------------->
+
+        <h4><i class='bx bxs-star'></i> Colour Picker</h4>
+
+        <form>
+            <label for="color" class="form-label">Pick a Colour</label>
+            <input type="color" class="form-control-color" value="urPlaceholder" readonly>
+            <button>Submit</button>
+        </form>
+
+        <hr>
+
+        <!-------------------------------- Colour Picker -------------------------------->
+
+        <!-------------------------------- Range -------------------------------->
+
+        <h4><i class='bx bxs-star'></i> Range</h4>
+
+        <form>
+            <label for="range" class="form-label">Pick the Range</label>
+            <input type="range" class="form-range" value="urPlaceholder" readonly>
+            <button>Submit</button>
+        </form>
+
+        <hr>
+
+        <!-------------------------------- Range -------------------------------->
+
+        <!-------------------------------- Select -------------------------------->
+
+        <h4><i class='bx bxs-star'></i> Select</h4>
+
+        <form>
+            <label for="Select" class="form-label">Select an option</label>
+            <select class="form-select">
+                <option>Option 1</option>
+                <option>Option 2</option>
+            </select>
+            <button>Submit</button>
+        </form>
+
+        <hr>
+
+        <!-------------------------------- Select -------------------------------->
+
+        <!-------------------------------- Checkbox -------------------------------->
+
+        <h4><i class='bx bxs-star'></i> Checkbox</h4>
+
+        <form>
+            <div class="form-check">
+                <label for="range" class="form-label">Check the Box</label>
+                <input type="checkbox" class="form-check-input " />
+            </div>
+            <button>Submit</button>
+        </form>
+
+        <hr>
+
+        <!-------------------------------- Checkbox -------------------------------->
+
+        <!-------------------------------- Switch -------------------------------->
+
+        <h4><i class='bx bxs-star'></i> Switch</h4>
+
+        <form>
+            <div class="form-check form-switch form-check-inline">
+                <label for="range" class="form-label">Check the Box-1</label>
+                <input type="checkbox" class="form-check-input " />
+            </div>
+            <div class="form-check form-switch form-check-inline">
+                <label for="range" class="form-label">Check the Box-2</label>
+                <input type="checkbox" class="form-check-input " />
+            </div>
+            <button>Submit</button>
+        </form>
+
+        <hr>
+
+        <!-------------------------------- Switch -------------------------------->
+
+        <!-------------------------------- Input Groups -------------------------------->
+
+        <h4><i class='bx bxs-star'></i> Input Groups</h4>
+
+        <form>
+            <label for="text" class="form-label">Label</label>
+            <div class="input-group">
+                <input type=" text" id="text" class="form-control" />
+                <input type="text" id="text2" class="form-control" />
+            </div>
+            <button>Submit</button>
+
+            <br><br>
+
+            <label for="text" class="form-label">Label</label>
+            <div class="input-group">
+                <div class="input-group-text">$</div>
+                <input type="number" id="text" class="form-control" />
+                <div class="input-group-text">.00</div>
+                <input type="number" id="text" class="form-control" />
+                <button class="btn btn-primary">Submit</button>
+            </div>
+
+            <br>
+
+            <label for="text" class="form-label">Label</label>
+            <div class="input-group input-group-1g">
+                <div class="input-group-text">$</div>
+                <input type="number" id="text" class="form-control" />
+                <button class="btn btn-primary">+</button>
+            </div>
+        </form>
+    </div>
+
+    <hr>
+
+    <!-------------------------------- Input Groups -------------------------------->
+
+    <!-------------------------------- Floating Label -------------------------------->
+
+    <div class="container">
+
+        <h4><i class='bx bxs-star'></i> Floating Label</h4>
+
+        <form>
+            <div class="form-floating">
+                <input type="email" id="email" class="form-control" placeholder="Place email here">
+                <!-------------------------------- Must add a Placeholder -------------------------------->
+                <label for="email" class="form-label">Email</label>
+            </div>
+            <button>Submit</button>
+        </form>
+
+    </div>
+
+    <hr>
+
+    <!-------------------------------- Floating Label -------------------------------->
+
+    <!-------------------------------- Forms -------------------------------->
+
+    <!-------------------------------- Components -------------------------------->
+
+    <!-------------------------------- Components Description -------------------------------->
+
+    <h2>- Bootstrap Components -</h2>
+
+    <p>Some of the most used & versatile components are given below</p>
+
+    <!-- <div class="code">
+        <p>
+            <code></code>
+        </p>
+    </div> -->
+
+    <!-------------------------------- Components Description -------------------------------->
+
+    <!-------------------------------- Buttons -------------------------------->
+
+    <div class="container">
+        <h4><i class='bx bxs-star'></i> Buttons</h4>
+        <button class="btn btn-primary">Helloo</button>
+        <button class="btn btn-secondary">Helloo</button>
+        <button class="btn btn-danger">Helloo</button>
+        <button class="btn btn-success">Helloo</button>
+        <button class="btn btn-dark">Helloo</button>
+        <button class="btn btn-light">Helloo</button>
+        &nbsp; <i class='bx bxs-arrow-from-right'></i><i class='bx bxs-arrow-from-left'></i> &nbsp;
+        <button class="btn btn-outline-primary">Helloo</button>
+        <button class="btn btn-outline-secondary">Helloo</button>
+        <button class="btn btn-outline-danger">Helloo</button>
+        <button class="btn btn-outline-success">Helloo</button>
+        <button class="btn btn-outline-dark">Helloo</button>
+        <button class="btn btn-outline -light">Helloo</button>
+        <br><br>
+
+        <h5><i class='bx bx-star'></i> Link styled like a button</h5>
+        <a href="#" class="btn btn-primary">Helloo</a>
+
+        <br><br>
+
+        <h5><i class='bx bx-star'></i> Button styled like a link</h5>
+        <button class="btn btn-link">Helloo</button>
+
+        <br><br>
+
+        <h5><i class='bx bx-star'></i> Disabled Button</h5>
+        <button class="btn btn-primary" disabled>Helloo</button>
+
+        <br><br>
+
+        <h5><i class='bx bx-star'></i> Button toggle</h5>
+        <button class="btn btn-outline-primary" data-bs-toggle="button">Helloo</button>
+
+        <br><br>
+
+        <h5><i class='bx bx-star'></i> Button Group</h5>
+        <div class="btn-group">
+            <button class="btn btn-primary">Helloo</button>
+            <button class="btn btn-outline-secondary">Helloo</button>
+            <button class="btn btn-primary">Helloo</button>
+            <button class="btn btn-outline-secondary">Helloo</button>
+        </div>
+
+        <br><br>
+        <hr>
+    </div>
+    <!-------------------------------- Buttons -------------------------------->
+
+    <!-------------------------------- Alerts -------------------------------->
+    <div class="container">
+        <h4><i class='bx bxs-star'></i> Alerts</h4>
+        <div class="alert alert-danger alert-dismissible" role="alert">Start Working u *%#$
+            <button class="btn-close" aria-label="close" data-bs-dismiss="alert"></button>
+        </div>
+
+        <!-------------------------------- Alerts -------------------------------->
+
+        <hr>
+
+        <!-------------------------------- Cards -------------------------------->
+
+        <h4><i class='bx bxs-star'></i> Cards</h4>
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">The Adventures of Sherlock-Holmes</h4>
+                <h5 class="card-subtitle">Sir Arthur Connan Doyle</h5>
+                <div class="card-text"> I trust that I am not more dense than my neighbours, but I was always oppressed
+                    with a sense of my own stupidity in my dealings with Sherlock Holmes. Here I had heard what he had
+                    heard, I had seen what he had seen, and yet from his words it was evident that he saw clearly not
+                    only what had happened but what was about to happen, while to me the whole business was still
+                    confused and grotesque. As I drove home to my house in Kensington I thought over it all, from the
+                    extraordinary story of the red-headed copier of the "Encyclopaedia" down to the visit to Saxe-Coburg
+                    Square, and the ominous words with which he had parted from me. What was this nocturnal expedition,
+                    and why should I go armed? Where were we going, and what were we to do? I had the hint from Holmes
+                    that this smooth-faced pawnbroker's assistant was a formidable man--a man who might play a deep
+                    game. I tried to puzzle it out, but gave it up in despair and set the matter aside until night
+                    should bring an explanation.
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <h5><i class='bx bx-star'></i> Card with an image</h5>
+        <div class="card" style="width:300px;">
+            <img class="card-img-top" src="./Assets/Images/300x300.jpg">
+            <div class="card-body">
+                <h4 class="card-title">Dr jekyll and Mr hyde</h4>
+                <h5 class="card-subtitle">Robert Louis Stevenson</h5>
+                <div class="card-text">“I beg your pardon, Dr. Lanyon,” he replied civilly enough. “What you say is very
+                    well founded; and my impatience has shown its heels to my politeness. I come here at the instance of
+                    your colleague, Dr. Henry Jekyll, on a piece of business of some moment; and I understood...”
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <h5><i class='bx bx-star'></i> Card image overlay</h5>
+        <div class="card" style="width:300px;">
+            <img class="card-img-top" src="./Assets/Images/300x300.jpg">
+            <div class="card-body card-img-overlay">
+                <h4 class="card-title">Dracula</h4>
+                <h5 class="card-subtitle">Bram Stoker</h5>
+                <div class="card-text">29 July.--Another tragedy. Had single watch to-night, as crew too tired to
+                    double. When morning watch came on deck could find no one except steersman. Raised outcry, and all
+                    came on deck. Thorough search, but no one found.
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <h5><i class='bx bx-star'></i> Card with a header</h5>
+        <div class="card">
+            <h3 class="card-header">Featured Book of the Week</h3>
+            <div class="card-body">
+                <h4 class="card-title">Life of Samuel Johnson</h4>
+                <h5 class="card-subtitle">James Boswel</h5>
+                <div class="card-text">Here let me not forget a curious anecdote, as related to me by Mr. Beauclerk,
+                    which I shall endeavour to exhibit as well as I can in that gentleman's lively manner; and in
+                    justice to him it is proper to add, that Dr. Johnson told me I might rely both on the correctness of
+                    his memory, and the fidelity of his narrative. 'When Madame de Boufflers was first in England, (said
+                    Beauclerk,) she was desirous to see Johnson. I accordingly went with her to his chambers in the
+                    Temple, where she was entertained with his conversation for some time. When our visit was over, she
+                    and I left him, and were got into Inner Temple-lane, when all at once I heard a noise like thunder.
+                    This was occasioned by Johnson, who it seems, upon a little recollection, had taken it into his head
+                    that he ought to have done the honours of his literary residence to a foreign lady of quality, and
+                    eager to shew himself a man of gallantry, was hurrying down the stair-case in violent agitation. He
+                    overtook us before we reached the Temple-gate, and brushing in between me and Madame de Boufflers,
+                    seized her hand, and conducted her to her coach. His dress was a rusty brown morning suit, a pair of
+                    old shoes by way of slippers, a little shrivelled wig sticking on the top of his head, and the
+                    sleeves of his shirt and the knees of his breeches hanging loose. A considerable crowd of people
+                    gathered round, and were not a little struck by this singular appearance.'
+                </div>
+            </div>
+            <div class="card-footer">Nice Book hah!</div>
+        </div>
+
+        <br>
+
+        <h5><i class='bx bx-star'></i> Card group</h5>
+
+        <div class="card-group">
+
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">The picture of Dorian Gray</h4>
+                    <h5 class="card-subtitle">Oscar Wilde</h5>
+                    <div class="card-text">The worship of the senses has often, and with much justice, been decried, men
+                        feeling a natural instinct of terror about passions and sensations that seem stronger than
+                        themselves, and that they are conscious of sharing with the less highly organized forms of
+                        existence. But it appeared to Dorian Gray that the true nature of the senses had never been
+                        understood, and that they had remained savage and animal merely because the world had sought to
+                        starve them into submission or to kill them by pain, instead of aiming at making them elements
+                        of a new spirituality, of which a fine instinct for beauty was to be the dominant
+                        characteristic. As he looked back upon man moving through history, he was haunted by a feeling
+                        of loss. So much had been surrendered! and to such little purpose! There had been mad wilful
+                        rejections, monstrous forms of self-torture and self-denial, whose origin was fear and whose
+                        result was a degradation infinitely more terrible than that fancied degradation from which, in
+                        their ignorance, they had sought to escape; Nature, in her wonderful irony, driving out the
+                        anchorite to feed with the wild animals of the desert and giving to the hermit the beasts of the
+                        field as his companions.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Pride and Pejudice</h4>
+                    <h5 class="card-subtitle"> Jane Austen</h5>
+                    <div class="card-text">The only pain was in leaving her father, who would certainly miss her, and
+                        who, when it came to the point, so little liked her going, that he told her to write to him, and
+                        almost promised to answer her letter.
+
+                        The farewell between herself and Mr. Wickham was perfectly friendly; on his side even more. His
+                        present pursuit could not make him forget that Elizabeth had been the first to excite and to
+                        deserve his attention, the first to listen and to pity, the first to be admired; and in his
+                        manner of bidding her adieu, wishing her every enjoyment, reminding her of what she was to
+                        expect in Lady Catherine de Bourgh, and trusting their opinion of her--their opinion of
+                        everybody--would always coincide, there was a solicitude, an interest which she felt must ever
+                        attach her to him with a most sincere regard; and she parted from him convinced that, whether
+                        married or single, he must always be her model of the amiable and pleasing.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-------------------------------- Cards -------------------------------->
+
+    <hr>
+
+    <!-------------------------------- Modal -------------------------------->
+    <div class="container">
+        <h4><i class='bx bxs-star'></i> Modals</h4>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">Hellooo</button>
+        <div class="modal" id="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    Hellooo
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+
+        <h5><i class='bx bx-star'></i> Model with Style <i class='bx bx-wink-smile'></i></h5>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">Hellooo</button>
+        <div class="modal fade modal-lg" id="modal1">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4>The Adventures of Sherlock Holmes</h4>
+                        <button class="btn-close" data-bs-dismiss="modal" data-bs-target="#modal1"></button>
+                    </div>
+                    <div class="modal-body">"It would comfort me, my husband!" was all she said; and he began to read
+                        when she had got the book ready.
+
+                        "How can I--how could any one--tell of that strange scene, its solemnity, its gloom, its
+                        sadness, its horror; and, withal, its sweetness. Even a sceptic, who can see nothing but a
+                        travesty of bitter truth in anything holy or emotional, would have been melted to the heart had
+                        he seen that little group of loving and devoted friends kneeling round that stricken and
+                        sorrowing lady; or heard the tender passion of her husband's voice, as in tones so broken with
+                        emotion that often he had to pause, he read the simple and beautiful service from the Burial of
+                        the Dead. I--I cannot go on--words--and--v-voice--f-fail m-me!"
+
+                        She was right in her instinct. Strange as it all was, bizarre as it may hereafter seem even to
+                        us who felt its potent influence at the time, it comforted us much; and the silence, which
+                        showed Mrs. Harker's coming relapse from her freedom of soul, did not seem so full of despair to
+                        any of us as we had dreaded. 15 October, Varna.--We left Charing Cross on the morning of the
+                        12th, got to Paris the same night, and took the places secured for us in the Orient Express. We
+                        travelled night and day, arriving here at about five o'clock. Lord Godalming went to the
+                        Consulate to see if any telegram had arrived for him, whilst the rest of us came on to this
+                        hotel--"the Odessus." The journey may have had incidents; I was, however, too eager to get on,
+                        to care for them. Until the Czarina Catherine comes into port there will be no interest for me
+                        in anything in the wide world. Thank God! Mina is well, and looks to be getting stronger; her
+                        colour is coming back. She sleeps a great deal; throughout the journey she slept nearly all the
+                        time. Before sunrise and sunset, however, she is very wakeful and alert; and it has become a
+                        habit for Van Helsing to hypnotise her at such times. At first, some effort was needed, and he
+                        had to make many passes; but now, she seems to yield at once, as if by habit, and scarcely any
+                        action is needed. He seems to have power at these particular moments to simply will, and her
+                        thoughts obey him. He always asks her what she can see and hear. She answers to the first:--
+
+                        "Nothing; all is dark." And to the second:--
+
+                        "I can hear the waves lapping against the ship, and the water rushing by. Canvas and cordage
+                        strain and masts and yards creak. The wind is high--I can hear it in the shrouds, and the bow
+                        throws back the foam." It is evident that the Czarina Catherine is still at sea, hastening on
+                        her way to Varna. Lord Godalming has just returned. He had four telegrams, one each day since we
+                        started, and all to the same effect: that the Czarina Catherine had not been reported to Lloyd's
+                        from anywhere. He had arranged before leaving London that his agent should send him every day a
+                        telegram saying if the ship had been reported. He was to have a message even if she were not
+                        reported, so that he might be sure that there was a watch being kept at the other end of the
+                        wire.</div>
+                    <div class="modal-footer">Hats off to FANS <i class='bx bxs-heart bx-tada'></i></div>
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+
+        <h5><i class='bx bx-star'></i> Fullscreen Modal</h5>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">Hellooo</button>
+        <div class="modal fade modal-lg" id="modal2">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4>Dr Jekyll & Mr Hyde</h4>
+                        <button class="btn-close" data-bs-dismiss="modal" data-bs-target="#modal2"></button>
+                    </div>
+                    <div class="modal-body">There was no mirror, at that date, in my room; that which stands beside me
+                        as I write, was brought there later on and for the very purpose of these transformations. The
+                        night however, was far gone into the morning--the morning, black as it was, was nearly ripe for
+                        the conception of the day--the inmates of my house were locked in the most rigorous hours of
+                        slumber; and I determined, flushed as I was with hope and triumph, to venture in my new shape as
+                        far as to my bedroom. I crossed the yard, wherein the constellations looked down upon me, I
+                        could have thought, with wonder, the first creature of that sort that their unsleeping vigilance
+                        had yet disclosed to them; I stole through the corridors, a stranger in my own house; and coming
+                        to my room, I saw for the first time the appearance of Edward Hyde.
+
+                        I must here speak by theory alone, saying not that which I know, but that which I suppose to be
+                        most probable. The evil side of my nature, to which I had now transferred the stamping efficacy,
+                        was less robust and less developed than the good which I had just deposed. Again, in the course
+                        of my life, which had been, after all, nine tenths a life of effort, virtue and control, it had
+                        been much less exercised and much less exhausted. And hence, as I think, it came about that
+                        Edward Hyde was so much smaller, slighter and younger than Henry Jekyll. Even as good shone upon
+                        the countenance of the one, evil was written broadly and plainly on the face of the other. Evil
+                        besides (which I must still believe to be the lethal side of man) had left on that body an
+                        imprint of deformity and decay. And yet when I looked upon that ugly idol in the glass, I was
+                        conscious of no repugnance, rather of a leap of welcome. This, too, was myself. It seemed
+                        natural and human. In my eyes it bore a livelier image of the spirit, it seemed more express and
+                        single, than the imperfect and divided countenance I had been hitherto accustomed to call mine.
+                        And in so far I was doubtless right. I have observed that when I wore the semblance of Edward
+                        Hyde, none could come near to me at first without a visible misgiving of the flesh. This, as I
+                        take it, was because all human beings, as we meet them, are commingled out of good and evil: and
+                        Edward Hyde, alone in the ranks of mankind, was pure evil.
+
+                        I lingered but a moment at the mirror: the second and conclusive experiment had yet to be
+                        attempted; it yet remained to be seen if I had lost my identity beyond redemption and must flee
+                        before daylight from a house that was no longer mine; and hurrying back to my cabinet, I once
+                        more prepared and drank the cup, once more suffered the pangs of dissolution, and came to myself
+                        once more with the character, the stature and the face of Henry Jekyll.
+
+                        That night I had come to the fatal cross-roads. Had I approached my discovery in a more noble
+                        spirit, had I risked the experiment while under the empire of generous or pious aspirations, all
+                        must have been otherwise, and from these agonies of death and birth, I had come forth an angel
+                        instead of a fiend. The drug had no discriminating action; it was neither diabolical nor divine;
+                        it but shook the doors of the prisonhouse of my disposition; and like the captives of Philippi,
+                        that which stood within ran forth. At that time my virtue slumbered; my evil, kept awake by
+                        ambition, was alert and swift to seize the occasion; and the thing that was projected was Edward
+                        Hyde. Hence, although I had now two characters as well as two appearances, one was wholly evil,
+                        and the other was still the old Henry Jekyll, that incongruous compound of whose reformation and
+                        improvement I had already learned to despair. The movement was thus wholly toward the worse.
+                    </div>
+                    <div class="modal-footer">Nice Book by the way. U should try this one. </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-------------------------------- Model -------------------------------->
+
+    <hr>
+
+    <!-------------------------------- Collapsable Items -------------------------------->
+
+    <div class="container">
+        <h4><i class='bx bxs-star'></i> Collapsable Items </h4>
+
+        <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#row" aria-expanded="false"
+            aria-controls="row">Toggle</button>
+
+        <div class="row collapse" id="row">
+            <div class="col">
+                <div class="box"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-------------------------------- Collapsable Items -------------------------------->
+
+    <hr>
+
+    <!-------------------------------- Navbar -------------------------------->
+
+    <nav class="navbar navbar-expand">
+        <div class="container">
+            <a href="#" class="navbar-brand">T-126</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link active" aria-current="page">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <br>
+
+    <div class="container">
+        <h4><i class='bx bxs-star'></i> Navbar <i class='bx bxs-up-arrow-alt'></i><i class='bx bxs-up-arrow-alt'></i>
+        </h4>
+        Sherlock Holmes had opened his mouth to reply, when the door flew open, and Peterson, the commissionaire, rushed
+        into the apartment with flushed cheeks and the face of a man who is dazed with astonishment.
+    </div>
+
+    <br><br>
+
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <div class="container">
+            <a href="#" class="navbar-brand">T-126</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link active" aria-current="page">About</a>
+                </li>
+            </ul>
+            <div class="navbar-text">Hellooo</div>
+        </div>
+    </nav>
+
+    <br>
+
+    <div class="container">
+        <h5><i class='bx bx-star'></i> Navbar dark mode <i class='bx bxs-up-arrow-alt'></i><i
+                class='bx bxs-up-arrow-alt'></i>
+        </h5>
+        "He was there too. He must 'a' started off and got there afore me, for when I rung of the bell he kem an'
+        opened the door 'isself an' 'elped me to carry the boxes into the 'all."
+
+        "The whole nine?" I asked.
+
+        "Yus; there was five in the first load an' four in the second. It was main dry work, an' I don't so well
+        remember 'ow I got 'ome." I interrupted him...
+    </div>
+
+    <br><br>
+
+    <nav class="navbar navbar-expand-md">
+        <div class="container">
+            <a href="#" class="navbar-brand">T-126</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav"
+                aria-label="Expand Navigation"><span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active" aria-current="page">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br>
+
+    <div class="container">
+        <h5><i class='bx bx-star'></i> Collapsable Navbar <i class='bx bxs-up-arrow-alt'></i><i
+                class='bx bxs-up-arrow-alt'></i>
+        </h5>
+        "That is the reward, and I have reason to know that there are sentimental considerations in the background which
+        would induce the Countess to part with half her fortune if she could but recover the gem."
+    </div>
+
+    <!-------------------------------- Navbar -------------------------------->
+
+    <hr>
+
+    <!-------------------------------- Components -------------------------------->
+
+</body>
+
+</html>
+
+<!------------------------------------- T-126 ------------------------------------->
